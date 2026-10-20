@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redes Sociales - DORA-MUNDO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <html>
+<style>
+/* ==============================================
+   PALETA LILA PASTEL — Suave y elegante 💜
+   ============================================== */
+:root {
+  --lila-oscuro:     #7B68EE;   /* Títulos */
+  --lila-medio:      #B39DDB;   /* Cabeceras */
+  --lila-claro:      #D8BFD8;   /* Fondos tabla */
+  --lila-muy-claro:  #F3E5F5;   /* Fondo página */
+  --lila-borde:      #CE93D8;   /* Bordes */
+  --lila-texto:      #5E35B1;   /* Texto */
+  --lila-boton:      #E1BEE7;   /* Botones */
+  --lila-hover:      #D8BFD8;   /* Hover */
+  --blanco:          #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--lila-muy-claro);
+  color: var(--lila-texto);
+  line-height: 1.7;
+}
+
+/* ==============================================
+   HEADER y NAVEGACIÓN
+   ============================================== */
+header {
+  background: linear-gradient(135deg, var(--lila-oscuro), var(--lila-medio));
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(94, 53, 177, 0.15);
+}
+
+header h1 {
+  color: var(--blanco);
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background-color: rgba(255,255,255,0.2);
+}
+
+nav a:hover,
+nav a.activo {
+  background-color: var(--blanco);
+  color: var(--lila-oscuro);
+  font-weight: bold;
+  transform: translateY(-2px);
+}
+
+/* ==============================================
+   CONTENIDO PRINCIPAL
+   ============================================== */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 25px;
+}
+
+main h2 {
+  font-size: 32px;
+  color: var(--lila-oscuro);
+  margin-bottom: 15px;
+  border-bottom: 3px solid var(--lila-borde);
+  padding-bottom: 8px;
+}
+
+main h3 {
+  font-size: 28px;
+  color: var(--lila-medio);
+  margin-bottom: 25px;
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--blanco);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(94, 53, 177, 0.1);
+  margin-bottom: 30px;
+}
+
+.bienvenida h2 {
+  font-size: 38px;
+  border: none;
+}
+
+.bienvenida p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 15px auto;
+  color: var(--lila-texto);
+}
+
+/* ==============================================
+   TABLA DE PRODUCTOS
+   ============================================== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(94, 53, 177, 0.12);
+  margin-bottom: 30px;
+}
+
+table th {
+  background: linear-gradient(135deg, var(--lila-oscuro), var(--lila-medio));
+  color: var(--blanco);
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 19px;
+}
+
+table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--lila-borde);
+  font-size: 17px;
+  background-color: var(--blanco);
+  vertical-align: middle;
+}
+
+table tr:nth-child(even) td {
+  background-color: var(--lila-claro);
+}
+
+table tr:hover td {
+  background-color: var(--lila-muy-claro);
+}
+
+table img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.puntuacion {
+  font-weight: bold;
+  color: var(--lila-oscuro);
+  font-size: 18px;
+}
+
+/* ==============================================
+   BOTONES
+   ============================================== */
+button,
+.btn {
+  background-color: var(--lila-boton);
+  border: 2px solid var(--lila-borde);
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: var(--lila-texto);
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--lila-hover);
+  border-color: var(--lila-oscuro);
+  transform: scale(1.05);
+}
+
+/* ==============================================
+   CAJA DE INFORMACIÓN (para cada página)
+   ============================================== */
+.info-caja {
+  background-color: var(--blanco);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(94, 53, 177, 0.08);
+  border-left: 5px solid var(--lila-oscuro);
+  margin-bottom: 25px;
+}
+
+.info-caja h3 {
+  color: var(--lila-oscuro);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.info-caja p,
+.info-caja ul {
+  font-size: 17px;
+  color: var(--lila-texto);
+}
+
+.info-caja ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.info-caja li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--lila-borde);
+}
+
+.info-caja li:last-child {
+  border-bottom: none;
+}
+
+/* ==============================================
+   FOOTER
+   ============================================== */
+footer {
+  background: linear-gradient(135deg, var(--lila-oscuro), var(--lila-medio));
+  color: var(--blanco);
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+</style>
+
+    <header>
+        <h1>🌸 KOKORO SWEETS 🌸</h1>
+        <nav>
+            <ul>
+    <li><a href="index1.html">INICIO</a></li>          
+    <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
+    <li><a href="preparacion.html">PREPARACIÓN</a></li>
+    <li><a href="menu.html">PRODUCTOS</a></li>
+    <li><a href="costos.html">COSTOS</a></li>
+    <li><a href="galeria.html">GALERÍA</a></li>
+    <li><a href="videos.html">VIDEOS</a></li>
+    <li><a href="contactos.html">CONTACTO</a></li>
+    <li><a href="googlemaps.html">UBICACIÓN</a></li>
+</ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>📱 Redes Sociales</h2>
+
+        <div class="info-caja">
+            <h3>✨ Síguenos y mantente conectado</h3>
+            <p>En nuestras redes sociales compartimos todo lo nuevo: productos del día, fotografías deliciosas, detrás de cámaras y mucho más. ¡Únete a nuestra comunidad!</p>
+        </div>
+
+        <table>
+            <tr>
+                <th>red social</th>
+                <th>usuario / cuenta</th>
+                <th>¿qué encontrarás?</th>
+                <th>visitar</th>
+            </tr>
+            <tr>
+                <td>📷 INSTAGRAM</td>
+                <td>@kokoro.sweets</td>
+                <td>Fotos de productos, novedades y contenido visual delicioso</td>
+                <td><button>ir →</button></td>
+            </tr>
+            <tr>
+                <td>📘 FACEBOOK</td>
+                <td>KOKORO-SWEETS</td>
+                <td>Publicaciones, reseñas, horarios y promociones exclusivas</td>
+                <td><button>ir →</button></td>
+            </tr>
+            <tr>
+                <td>🎵 TIKTOK</td>
+                <td>@KOKORO_SWEETS</td>
+                <td>Videos cortos, proceso de elaboración y momentos divertidos</td>
+                <td><button>ir →</button></td>
+            </tr>
+            <tr>
+                <td>💬 WHATSAPP</td>
+                <td>+591 67238085
+                 +591 62760909</td>
+                 
+                <td>Pedidos directos, consultas y atención personalizada 1 a 1</td>
+                <td><button>escribir →</button></td>
+            </tr>
+        </table>
+
+        <div class="info-caja">
+            <h3>💜 ¿Por qué seguirnos?</h3>
+            <ul>
+                <li>🔔 Serás el primero en enterarte de nuestras promociones y novedades</li>
+                <li>📸 Verás fotos tentadoras de nuestros productos recién preparados</li>
+                <li>💬 Podrás enviarnos tus dudas, sugerencias y pedidos</li>
+                <li>❤️ Formarás parte de nuestra comunidad de clientes queridos</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>💜 KOKORO SWEETS — Conéctate con nosotros 💜</p>
+    </footer>
+
+</body>
+</html>

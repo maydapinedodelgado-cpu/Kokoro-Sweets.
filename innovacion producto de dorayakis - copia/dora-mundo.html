@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dora-Mundo | Proyecto Innovador</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f3eaf9; /* Fondo lila suave */
+            color: #2b2b2b;
+            line-height: 1.6;
+        }
+
+        /* Barra superior */
+        header {
+            background-color: #9370db; /* Lila medio elegante */
+            padding: 18px;
+            text-align: center;
+        }
+
+        .titulo-principal {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 12px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenido general */
+        .contenedor {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 25px;
+        }
+
+        .subtitulo {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #5a3d82;
+        }
+
+        .frase-central {
+            color: #7b4bb7;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        /* Secciones del proyecto */
+        .seccion {
+            background-color: #ede4f8;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #9370db;
+        }
+
+        .seccion h2 {
+            color: #5c437a;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        /* Tabla de productos */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ede4f8;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: #6a4c93; /* Lila oscuro */
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #d4bcee;
+        }
+
+        .boton {
+            background-color: #d6b8f5;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 6px;
+            color: #3a2454;
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .boton:hover {
+            background-color: #c198eb;
+        }
+
+        /* Lista */
+        ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> DORA-MUNDO </H1>
+        <nav>
+            <ul>
+    <li class="titulo-principal">🥞 Dora-Mundo</div>
+    <nav>
+        <a href="#inicio">menú</a>
+        <a href="#proyecto">El Proyecto</a>
+        <a href="#productos">Productos</a>
+        <a href="#ventajas">Innovación</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<div class="contenedor" id="inicio">
+    <h2 class="subtitulo">menú de recetas e información</h2>
+    <h1 class="frase-central">lo que preparamos es</h1>
+
+
+    <!-- 1. PRESENTACIÓN DEL PROYECTO -->
+    <section class="seccion" id="proyecto">
+        <h2>📋 Presentación del Proyecto Innovador</h2>
+        <p><strong>Nombre:</strong> Dora-Mundo: Sabor, Salud y Creatividad</p>
+        <p><strong>Eslogan:</strong> Dorayakis que cuidan de ti y del planeta</p>
+        <p><strong>¿Qué somos?</strong> Un emprendimiento que reinventa el dorayaki tradicional: lo hacemos <strong>más sano, personalizable, ecológico y con propósito social</strong>. No solo vendemos comida, ofrecemos experiencia y confianza.</p>
+    </section>
+
+
+    <!-- 2. EN QUÉ ES INNOVADOR -->
+    <section class="seccion" id="ventajas">
+        <h2>💡 Por qué es único</h2>
+        <ul>
+            <li><strong>Recetas saludables:</strong> Harina integral, azúcar baja/estevia, sin conservantes, opciones veganas y celíacos.</li>
+            <li><strong>Sabores especiales:</strong> Ingredientes locales de Bolivia — quinua, miel de altiplano, frutas nativas.</li>
+            <li><strong>Personalización total:</strong> Tú eliges masa, relleno, tamaño y mensajes comestibles.</li>
+            <li><strong>Ecología:</strong> Empaques sin plástico, materiales reciclados/compostables, cero desperdicio.</li>
+            <li><strong>Impacto social:</strong> Parte de ganancias a comedores infantiles; empleo para jóvenes locales.</li>
+        </ul>
+    </section>
+
+
+    <!-- 3. TABLA DE PRODUCTOS (igual a tu imagen) -->
+    <section class="seccion" id="productos">
+        <h2>🍩 Nuestros Dorayakis</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>producto</th>
+                    <th>descripción</th>
+                    <th>puntuación</th>
+                    <th>más info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dorayaki clásico</td>
+                    <td>Relleno tradicional de frijol dulce, receta mejorada y más ligera</td>
+                    <td>9/10</td>
+                    <td><button class="boton">leer más</button></td>
+                </tr>
+                <tr>
+                    <td>Dorayaki de chocolate</td>
+                    <td>Relleno cremoso de cacao natural, menos azúcar, sin aceites extraños</td>
+                    <td>10/10</td>
+                    <td><button class="boton">leer más</button></td>
+                </tr>
+                <tr>
+                    <td>Dorayaki de crema</td>
+                    <td>Con leche fresca y vainilla natural, suave y muy nutritivo</td>
+                    <td>8/10</td>
+                    <td><button class="boton">leer más</button></td>
+                </tr>
+                <tr>
+                    <td>Dorayaki regional</td>
+                    <td>Con miel de Bolivia y frutas del altiplano: exclusivo y saludable</td>
+                    <td>10/10</td>
+                    <td><button class="boton">leer más</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- 4. PRODUCCIÓN Y MATERIALES -->
+    <section class="seccion">
+        <h2>🛠️ Materiales y Producción</h2>
+        <p><strong>Ingredientes:</strong> Harina seleccionada, huevos frescos, leche local, endulzantes naturales, frutas y rellenos sin químicos.</p>
+        <p><strong>Equipo:</strong> Planchas profesionales, utensilios higiénicos, balanza precisa, empaques ecológicos certificados.</p>
+        <p><strong>Calidad:</strong> Cocinamos al día, normas estrictas de limpieza, control de frescura y conservación.</p>
+    </section>
+
+
+    <!-- 5. VENTAS Y OBJETIVOS -->
+    <section class="seccion" id="contacto">
+        <h2>📢 Ventas y Metas</h2>
+        <p><strong>Formas de pedir:</strong> Directo, WhatsApp, entregas a domicilio, puntos aliados y eventos.</p>
+        <p><strong>Precios:</strong> Accesibles, paquetes familiares y descuentos por fidelidad.</p>
+        <p><strong>Objetivo:</strong> Ser marca líder local, crecer con franquicias y seguir apoyando causas sociales.</p>
+    </section>
+
+</div>
+
+</body>

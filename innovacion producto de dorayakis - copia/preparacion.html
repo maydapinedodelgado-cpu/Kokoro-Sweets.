@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparación - KOKORO SWEETS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<html>
+<style>
+    /* ==============================================
+   PALETA LILA PASTEL — Suave y elegante 💜
+   ============================================== */
+:root {
+  --lila-oscuro:     #7B68EE;   /* Títulos */
+  --lila-medio:      #B39DDB;   /* Cabeceras */
+  --lila-claro:      #D8BFD8;   /* Fondos tabla */
+  --lila-muy-claro:  #F3E5F5;   /* Fondo página */
+  --lila-borde:      #CE93D8;   /* Bordes */
+  --lila-texto:      #5E35B1;   /* Texto */
+  --lila-boton:      #E1BEE7;   /* Botones */
+  --lila-hover:      #D8BFD8;   /* Hover */
+  --blanco:          #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--lila-muy-claro);
+  color: var(--lila-texto);
+  line-height: 1.7;
+}
+
+/* ==============================================
+   HEADER y NAVEGACIÓN
+   ============================================== */
+header {
+  background: linear-gradient(135deg, var(--lila-oscuro), var(--lila-medio));
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(94, 53, 177, 0.15);
+}
+
+header h1 {
+  color: var(--blanco);
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background-color: rgba(255,255,255,0.2);
+}
+
+nav a:hover,
+nav a.activo {
+  background-color: var(--blanco);
+  color: var(--lila-oscuro);
+  font-weight: bold;
+  transform: translateY(-2px);
+}
+</style>
+<header>
+    <h1>🌸 KOKORO SWEETS🌸</h1>
+    <nav>
+        <ul>
+            <li><a href="index1.html">INICIO</a></li>
+            <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
+            <li><a href="preparacion.html" class="activo">PREPARACION</a></li>
+            <li><a href="menu.html">PRODUCTOS</a></li>
+            <li><a href="costos.html">COSTOS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="videos.html">VIDEOS</a></li>
+            <li><a href="contactos.html">CONTACTO</a></li>
+            <li><a href="googlemaps.html">UBICACION</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main class="preparacion">
+
+    <h1>🌸 Preparación 🌸</h1>
+
+    <h2 class="subtitulo">
+        💗 De nuestros dorayakis 💗
+    </h2>
+
+    <p class="intro">
+        En <strong>KOKORO SWEETS</strong>, cada dorayaki es preparado
+        con amor y de forma artesanal. Utilizamos ingredientes
+        seleccionados para conseguir un sabor delicioso y una textura
+        suave y esponjosa.
+    </p>
+
+
+    <!-- PASOS -->
+
+    <section class="pasos">
+
+
+        <!-- PASO 1 -->
+
+        <div class="paso">
+
+            <div class="numero">1</div>
+            <img src="masa.jpg"width="115"height="115">
+            <h3>Preparamos la masa</h3>
+
+            <p>
+                Mezclamos los ingredientes seleccionados como harina,
+                huevo, azúcar, miel y leche hasta obtener una masa
+                suave y homogénea.
+            </p>
+
+        </div>
+
+
+        <!-- PASO 2 -->
+
+        <div class="paso">
+
+            <div class="numero">2</div>
+            <img src="reposo de mas.jpg" width="115"height="115">
+
+            <h3>Reposo de la masa</h3>
+
+            <p>
+                Dejamos reposar la masa durante unos minutos.
+                Esto ayuda a conseguir que los dorayakis queden
+                más esponjosos y suaves.
+            </p>
+
+        </div>
+
+
+        <!-- PASO 3 -->
+
+        <div class="paso">
+
+            <div class="numero">3</div>
+
+            <img src="coccion.jpg" width="115"height="115">
+            <h3>Cocción</h3>
+
+            <p>
+                Vertemos la masa en pequeñas porciones sobre una
+                sartén caliente y cocinamos hasta que aparezcan
+                pequeñas burbujas.
+            </p>
+
+        </div>
+
+
+        <!-- PASO 4 -->
+
+        <div class="paso">
+
+            <div class="numero">4</div>
+
+            <img src="enfriar.jpg" width="125"height="125">
+
+            <h3>Dejamos enfriar</h3>
+
+            <p>
+                Retiramos los panqueques y los dejamos enfriar
+                para que tengan la textura perfecta antes de
+                colocar el relleno.
+            </p>
+
+        </div>
+
+
+        <!-- PASO 5 -->
+
+        <div class="paso">
+
+            <div class="numero">5</div>
+            <img src="rellenar.jpg" width="115"height="115">
+            <h3>Rellenamos</h3>
+
+            <p>
+                Agregamos generosamente nuestros deliciosos
+                rellenos artesanales entre los dos panqueques.
+            </p>
+
+        </div>
+
+
+        <!-- PASO 6 -->
+
+        <div class="paso">
+
+            <div class="numero">6</div>
+            <img src="disfrutar.jpg"width="115"height="115">
+            
+
+            <h3>Listos para disfrutar</h3>
+
+            <p>
+                Nuestros dorayakis están listos para disfrutar.
+                Puedes compartirlos con tus amigos, familiares
+                o alguien especial.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- INGREDIENTES -->
+
+    <section class="ingredientes">
+
+        <h2> Ingredientes principales</h2>
+
+        <ul>
+            <li> Harina de trigo</li>
+            <li> Huevo fresco</li>
+            <li> Azúcar</li>
+            <li> Miel</li>
+            <li> Leche</li>
+            <li> Leudante</li>
+            <li> Rellenos artesanales</li>
+        </ul>
+
+    </section>
+
+    <div class="frase-preparacion">
+        ✨ “Conectamos corazones, endulzamos momentos.” 💗
+    </div>
+
+
+</main>
+
+</body>
+</html>

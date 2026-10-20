@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | KOKORO SWEETS</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+
+            background:
+                linear-gradient(
+                    rgba(35, 25, 100, 0.30),
+                    rgba(245, 160, 215, 0.30)
+                ),
+                url("yourname.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+
+        .productos {
+            max-width: 1500px;
+            margin: 30px auto;
+            padding: 35px;
+
+            background: rgba(220, 215, 245, 0.78);
+
+            border: 3px solid rgba(255,255,255,0.85);
+            border-radius: 30px;
+
+            box-shadow:
+                0 0 20px #ffb5dc,
+                0 0 45px rgba(255,105,180,0.5);
+        }
+
+        /* TÍTULO */
+
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            font-size: 70px;
+            margin: 0 0 5px;
+
+            color: #292b78;
+
+            text-shadow:
+                0 0 8px white,
+                0 0 18px #ffb5dc,
+                0 0 30px #ff69b4;
+
+            animation:
+                moverTitulo 4s ease-in-out infinite,
+                brilloTitulo 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes moverTitulo {
+            0% {
+                transform: translateX(-20px);
+            }
+
+            50% {
+                transform: translateX(20px);
+            }
+
+            100% {
+                transform: translateX(-20px);
+            }
+        }
+
+        @keyframes brilloTitulo {
+            0% {
+                text-shadow:
+                    0 0 5px white,
+                    0 0 10px #ffb5dc;
+            }
+
+            100% {
+                text-shadow:
+                    0 0 10px white,
+                    0 0 25px #ff69b4,
+                    0 0 40px #ff8fc5;
+            }
+        }
+
+        /* BRILLITOS */
+
+        h1::before {
+            content: "✦  ✧  ✦";
+            display: block;
+
+            font-family: Arial;
+            font-size: 20px;
+            color: white;
+
+            animation: destellos 1.8s ease-in-out infinite;
+        }
+
+        @keyframes destellos {
+
+            0%,100% {
+                opacity: 0.3;
+            }
+
+            50% {
+                opacity: 1;
+                text-shadow:
+                    0 0 8px white,
+                    0 0 18px #ff69b4;
+            }
+        }
+
+        /* SUBTÍTULO */
+
+        .subtitulo {
+            text-align: center;
+            color: #e90078;
+            font-family: cursive;
+            font-size: 32px;
+            font-weight: bold;
+
+            text-shadow:
+                0 0 5px white,
+                0 0 12px #ffb5dc;
+
+            margin-bottom: 5px;
+        }
+
+        .descripcion-general {
+            text-align: center;
+            color: #27276e;
+            font-size: 19px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        /* PRODUCTOS */
+
+        .contenedor-productos {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 22px;
+        }
+
+        .producto {
+            grid-column: span 2;
+
+            background: rgba(255,255,255,0.75);
+
+            border: 2px solid #ffb5dc;
+            border-radius: 25px;
+
+            padding: 15px;
+
+            text-align: center;
+
+            box-shadow:
+                0 0 12px rgba(255,105,180,0.35);
+
+            transition: 0.4s;
+        }
+
+        /* TRES ARRIBA */
+
+        .producto:nth-child(1),
+        .producto:nth-child(2),
+        .producto:nth-child(3) {
+            grid-column: span 2;
+        }
+
+        /* DOS ABAJO CENTRADOS */
+
+        .producto:nth-child(4) {
+            grid-column: 2 / span 2;
+        }
+
+        .producto:nth-child(5) {
+            grid-column: 4 / span 2;
+        }
+
+        .producto:hover {
+            transform: translateY(-10px) scale(1.02);
+
+            box-shadow:
+                0 0 20px #ff69b4,
+                0 0 35px rgba(255,182,220,0.8);
+        }
+
+        /* IMAGEN */
+
+        .producto img {
+            width: 100%;
+            height: 210px;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+
+            border: 3px solid white;
+
+            box-shadow:
+                0 0 10px #ffb5dc;
+        }
+
+        /* NOMBRE */
+
+        .producto h2 {
+            color: #e90078;
+            font-family: cursive;
+            font-size: 27px;
+
+            margin: 12px 0 8px;
+
+            text-shadow:
+                0 0 5px white,
+                0 0 10px #ffb5dc;
+        }
+
+        /* DECORACIÓN */
+
+        .flor {
+            color: #ff69b4;
+            font-size: 22px;
+        }
+
+        /* DESCRIPCIÓN */
+
+        .producto p {
+            color: #27276e;
+            font-size: 17px;
+            line-height: 1.4;
+            margin: 5px 10px 12px;
+        }
+
+        /* FRASE FINAL */
+
+        .frase {
+            text-align: center;
+
+            margin-top: 30px;
+
+            color: #e90078;
+            font-family: cursive;
+
+            font-size: 30px;
+            font-weight: bold;
+
+            text-shadow:
+                0 0 5px white,
+                0 0 15px #ff69b4;
+        }
+
+        /* FLORES DECORATIVAS */
+
+        .decoracion {
+            text-align: center;
+            color: #ff69b4;
+            font-size: 28px;
+            letter-spacing: 15px;
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 900px) {
+
+            .productos {
+                margin: 15px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .subtitulo {
+                font-size: 25px;
+            }
+
+            .contenedor-productos {
+                grid-template-columns: 1fr;
+            }
+
+            .producto,
+            .producto:nth-child(1),
+            .producto:nth-child(2),
+            .producto:nth-child(3),
+            .producto:nth-child(4),
+            .producto:nth-child(5) {
+                grid-column: 1;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <section class="productos">
+
+        <div class="decoracion">
+            ✦　✧　🌸　✧　✦
+        </div>
+
+        <h1>Productos</h1>
+
+        <div class="subtitulo">
+            ♡ Nuestros deliciosos dorayakis ♡
+        </div>
+
+        <p class="descripcion-general">
+            Hechos con ingredientes seleccionados, mucho amor<br>
+            y el auténtico sabor japonés.
+        </p>
+
+
+        <div class="contenedor-productos">
+
+
+            <!-- PRODUCTO 1 -->
+
+            <div class="producto">
+
+                <img src="dorayaki1.jpg"
+                     alt="Dorayaki tradicional">
+
+                <div class="flor">✿</div>
+
+                <h2>
+                    Dorayaki tradicional
+                </h2>
+
+                <p>
+                    Con el auténtico sabor del anko japonés.
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCTO 2 -->
+
+            <div class="producto">
+
+                <img src="dorayaki2.jpg"
+                     alt="Dorayaki de chocolate con avellana">
+
+                <div class="flor">✿</div>
+
+                <h2>
+                    Chocolate con avellana
+                </h2>
+
+                <p>
+                    La combinación perfecta entre lo dulce y cremoso.
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCTO 3 -->
+
+            <div class="producto">
+
+                <img src="dorayaki3.jpg"
+                     alt="Dorayaki de matcha con crema">
+
+                <div class="flor">✿</div>
+
+                <h2>
+                    Matcha con crema
+                </h2>
+
+                <p>
+                    Un toque japonés lleno de sabor y frescura.
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCTO 4 -->
+
+            <div class="producto">
+
+                <img src="dorayaki4.jpg"
+                     alt="Dorayaki de fresa con crema">
+
+                <div class="flor">✿</div>
+
+                <h2>
+                    Fresa con crema
+                </h2>
+
+                <p>
+                    Dulzura y frescura en cada bocado.
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCTO 5 -->
+
+            <div class="producto">
+
+                <img src="dorayaki5.jpg"
+                     alt="Dorayaki Oreo con crema">
+
+                <div class="flor">✿</div>
+
+                <h2>
+                    Oreo con crema
+                </h2>
+
+                <p>
+                    Un sabor delicioso y favorito de muchos.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="frase">
+            🌸 “Conectamos corazones, endulzamos momentos.” 🌸
+        </div>
+
+        <div class="decoracion">
+            ✦　✧　♡　✧　✦
+        </div>
+
+    </section>
+
+</body>
+</html>

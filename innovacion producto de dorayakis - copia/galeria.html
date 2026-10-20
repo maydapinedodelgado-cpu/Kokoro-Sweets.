@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - KOKORO SWEETS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <html>
+    <style>
+         /* ==============================================
+   PALETA LILA PASTEL — Suave y elegante 💜
+   ============================================== */
+:root {
+  --lila-oscuro:     #7B68EE;   /* Títulos */
+  --lila-medio:      #B39DDB;   /* Cabeceras */
+  --lila-claro:      #D8BFD8;   /* Fondos tabla */
+  --lila-muy-claro:  #F3E5F5;   /* Fondo página */
+  --lila-borde:      #CE93D8;   /* Bordes */
+  --lila-texto:      #5E35B1;   /* Texto */
+  --lila-boton:      #E1BEE7;   /* Botones */
+  --lila-hover:      #D8BFD8;   /* Hover */
+  --blanco:          #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--lila-muy-claro);
+  color: var(--lila-texto);
+  line-height: 1.7;
+}
+
+/* ==============================================
+   HEADER y NAVEGACIÓN
+   ============================================== */
+header {
+  background: linear-gradient(135deg, var(--lila-oscuro), var(--lila-medio));
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(94, 53, 177, 0.15);
+}
+
+header h1 {
+  color: var(--blanco);
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background-color: rgba(255,255,255,0.2);
+}
+
+nav a:hover,
+nav a.activo {
+  background-color: var(--blanco);
+  color: var(--lila-oscuro);
+  font-weight: bold;
+  transform: translateY(-2px);
+}
+</style>
+<header>
+     <h1>🌸 KOKORO SWEETS🌸</h1>
+    <nav>
+        <ul>
+            <li><a href="index1.html">Inicio</a></li>
+            <li><a href="quienessomos.html">Quiénes Somos</a></li>
+            <li><a href="preparacion.html">Preparación</a></li>
+            <li><a href="menu.html">Productos</a></li>
+            <li><a href="costos.html">Costos</a></li>
+            <li><a href="galeria.html" class="activo">Galería</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+            <li><a href="googlemaps.html">Ubicación</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main class="galeria">
+
+    <div class="contenedor-galeria">
+
+        <h1>🌸 Galería 🌸</h1>
+
+        <h2> De nuestros dorayakis </h2>
+
+        <p class="descripcion">
+            Cada dorayaki cuenta una historia... y aquí puedes conocer
+            algunos de nuestros deliciosos sabores.
+        </p>
+
+        <p class="descripcion">
+            ✨ ¡Gracias por ser parte de este dulce viaje! ✨
+        </p>
+
+
+        <!-- GALERÍA -->
+
+        <section class="galeria-productos">
+
+
+            <!-- DORAYAKI 1 -->
+
+            <div class="foto-dorayaki">
+
+                <img src="dorayaki 2.jpeg">
+
+                <h3> Dorayaki tradicional</h3>
+
+                <p>
+                    Con el auténtico sabor del anko
+                    japonés.
+                </p>
+
+            </div>
+
+
+            <!-- DORAYAKI 2 -->
+
+            <div class="foto-dorayaki">
+
+                <img src="dorayaki 5.jpeg">
+
+                <h3>Chocolate con avellana</h3>
+
+                <p>
+                    La combinación perfecta entre
+                    lo dulce y lo cremoso.
+                </p>
+
+            </div>
+
+
+            <!-- DORAYAKI 3 -->
+
+            <div class="foto-dorayaki">
+
+                <img src="dorayaki 4.jpeg">
+
+                <h3> mango con crema</h3>
+
+                <p>
+                    Un toque japonés lleno de
+                    sabor y frescura.
+                </p>
+
+            </div>
+
+
+            <!-- DORAYAKI 4 -->
+
+            <div class="foto-dorayaki">
+
+                <img src="dorayaki 3.jpeg">
+
+                <h3>Fresa con crema</h3>
+
+                <p>
+                    Dulzura y frescura en
+                    cada bocado.
+                </p>
+
+            </div>
+
+
+            <!-- DORAYAKI 5 -->
+
+            <div class="foto-dorayaki">
+
+                <img src="dorayaki 1.jpeg">
+
+                <h3> Oreo con crema</h3>
+
+                <p>
+                    El sabor favorito de
+                    muchos.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <div class="frase-galeria">
+
+            💗 “Conectamos corazones,
+            endulzamos momentos.” 💗
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>

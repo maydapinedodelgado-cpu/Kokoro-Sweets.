@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto - KOKORO SWEETS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<html>
+<style>
+    /* ==============================================
+   PALETA LILA PASTEL — Suave y elegante 💜
+   ============================================== */
+:root {
+  --lila-oscuro:     #7B68EE;   /* Títulos */
+  --lila-medio:      #B39DDB;   /* Cabeceras */
+  --lila-claro:      #D8BFD8;   /* Fondos tabla */
+  --lila-muy-claro:  #F3E5F5;   /* Fondo página */
+  --lila-borde:      #CE93D8;   /* Bordes */
+  --lila-texto:      #5E35B1;   /* Texto */
+  --lila-boton:      #E1BEE7;   /* Botones */
+  --lila-hover:      #D8BFD8;   /* Hover */
+  --blanco:          #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--lila-muy-claro);
+  color: var(--lila-texto);
+  line-height: 1.7;
+}
+
+/* ==============================================
+   HEADER y NAVEGACIÓN
+   ============================================== */
+header {
+  background: linear-gradient(135deg, var(--lila-oscuro), var(--lila-medio));
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(94, 53, 177, 0.15);
+}
+
+header h1 {
+  color: var(--blanco);
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background-color: rgba(255,255,255,0.2);
+}
+
+nav a:hover,
+nav a.activo {
+  background-color: var(--blanco);
+  color: var(--lila-oscuro);
+  font-weight: bold;
+  transform: translateY(-2px);
+}
+</style>
+<header>
+     <h1>🌸 KOKORO SWEETS🌸</h1>
+    <nav>
+        <ul>
+            <li><a href="index1.html">Inicio</a></li>
+            <li><a href="quienessomos.html">Quiénes Somos</a></li>
+            <li><a href="preparacion.html">Preparación</a></li>
+            <li><a href="menu.html">Productos</a></li>
+            <li><a href="costos.html">Costos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="contactos.html" class="activo">Contacto</a></li>
+            <li><a href="googlemaps.html">Ubicación</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main class="contacto">
+
+    <div class="contenedor-contacto">
+
+        <h1> Contacto </h1>
+
+        <h2> ¡Estamos aquí para ti! </h2>
+
+        <p class="intro-contacto">
+            Si tienes alguna duda, quieres realizar un pedido
+            o deseas conocer más sobre nuestros dorayakis,
+            ¡no dudes en escribirnos!
+        </p>
+
+
+        <section class="contactos-grid">
+
+
+            <!-- WHATSAPP -->
+
+            <div class="contacto-card">
+
+                <div class="icono-contacto"></div>
+
+                <h3> WhatsApp</h3>
+
+                <p>
+                    Escríbenos directamente para realizar
+                    tu pedido o consultar nuestros productos.
+                </p>
+
+                <a
+                    href="https://wa.me/qr/TJLJB7QERSR6E1"
+                    target="_blank"
+                    class="boton-contacto">
+
+                     Escribir por WhatsApp
+
+                </a>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <div class="contacto-card">
+
+                <div class="icono-contacto"></div>
+
+                <h3> Instagram</h3>
+
+                <p>
+                    Síguenos para conocer nuestras novedades,
+                    fotografías, promociones y mucho más.
+                </p>
+
+                <a
+                    href="https://www.instagram.com/kokoro_sweets1?obrf=MWlyY2k0MzVudnNvaA=="
+                    target="_blank"
+                    class="boton-contacto">
+
+                     Visitar Instagram
+
+                </a>
+
+            </div>
+
+
+            <!-- TIKTOK -->
+
+            <div class="contacto-card">
+
+                <div class="icono-contacto"></div>
+
+                <h3> TikTok</h3>
+
+                <p>
+                    Disfruta de nuestros videos, recetas,
+                    preparaciones y momentos especiales.
+                </p>
+
+                <a
+                    href="tiktok.com/@kokoro.sweets1"
+                    target="_blank"
+                    class="boton-contacto">
+
+                     Visitar TikTok
+
+                </a>
+
+            </div>
+
+
+            <!-- YAPE -->
+
+            <div class="contacto-card yape">
+
+                <div class="icono-contacto"></div>
+
+                <h3> Yape</h3>
+
+                <p>
+                    También puedes realizar el pago de tu
+                    pedido mediante Yape.
+                </p>
+
+                <!-- AQUÍ PONES TU QR -->
+
+                <img
+                    src="yape wats.jpeg"
+                    alt="Código QR de Yape"
+                    class="qr-yape">
+
+                <p class="texto-qr">
+                     Escanea el código QR para realizar tu pago.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <div class="frase-contacto">
+
+             “Conectamos corazones,
+            endulzamos momentos.” 
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>

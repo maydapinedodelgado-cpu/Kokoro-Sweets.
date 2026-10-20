@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Videos - KOKORO SWEETS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <html>  
+<style>
+    /* ==============================================
+   PALETA LILA PASTEL — Suave y elegante 💜
+   ============================================== */
+:root {
+  --lila-oscuro:     #7B68EE;   /* Títulos */
+  --lila-medio:      #B39DDB;   /* Cabeceras */
+  --lila-claro:      #D8BFD8;   /* Fondos tabla */
+  --lila-muy-claro:  #F3E5F5;   /* Fondo página */
+  --lila-borde:      #CE93D8;   /* Bordes */
+  --lila-texto:      #5E35B1;   /* Texto */
+  --lila-boton:      #E1BEE7;   /* Botones */
+  --lila-hover:      #D8BFD8;   /* Hover */
+  --blanco:          #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--lila-muy-claro);
+  color: var(--lila-texto);
+  line-height: 1.7;
+}
+
+/* ==============================================
+   HEADER y NAVEGACIÓN
+   ============================================== */
+header {
+  background: linear-gradient(135deg, var(--lila-oscuro), var(--lila-medio));
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(94, 53, 177, 0.15);
+}
+
+header h1 {
+  color: var(--blanco);
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background-color: rgba(255,255,255,0.2);
+}
+
+nav a:hover,
+nav a.activo {
+  background-color: var(--blanco);
+  color: var(--lila-oscuro);
+  font-weight: bold;
+  transform: translateY(-2px);
+}
+</style>
+
+<!-- NAVEGACIÓN -->
+
+<header>
+     <h1>🌸 KOKORO SWEETS🌸</h1>
+    <nav>
+        <ul>
+            <li><a href="index1.html">Inicio</a></li>
+
+            <li><a href="quienessomos.html">
+                Quiénes Somos
+            </a></li>
+
+            <li><a href="preparacion.html">
+                Preparación
+            </a></li>
+
+            <li><a href="menu.html">
+                Productos
+            </a></li>
+
+            <li><a href="costos.html">
+                Costos
+            </a></li>
+
+            <li><a href="galeria.html">
+                Galería
+            </a></li>
+
+            <li><a href="videos.html" class="activo">
+                Videos
+            </a></li>
+
+            <li><a href="contactos.html">
+                Contacto
+            </a></li>
+
+            <li><a href="googlemaps.html">
+                Ubicación
+            </a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="videos">
+
+    <div class="contenedor-videos">
+
+        <h1> Videos </h1>
+
+        <h2 class="subtitulo-video">
+            De nuestros dorayakis 
+        </h2>
+
+        <p class="intro-video">
+            Aquí puedes descubrir cómo preparamos nuestros deliciosos
+            dorayakis y conocer un poco más de nuestro emprendimiento.
+        </p>
+
+        <div class="contenido-video">
+
+            <!-- ESPACIO PARA EL VIDEO -->
+
+            <section class="reproductor">
+
+                <video controls poster="portada-dorayaki.jpg">
+                    <source src="video kokoro sweets.mp4" type="video/mp4">
+
+                    Tu navegador no puede reproducir este video.
+                </video>
+
+                <div class="nombre-video">
+                    <h2>KOKORO SWEETS</h2>
+                    <p> Dorayakis artesanales </p>
+                </div>
+
+            </section>
+
+            <!-- INFORMACIÓN DEL VIDEO -->
+
+            <section class="info-video">
+
+                <div class="icono-video"></div>
+
+                <h2>En este video podrás ver:</h2>
+
+                <div class="linea-rosa"></div>
+
+                <p> La preparación de la masa.</p>
+
+                <p> El cocinado de los panqueques.</p>
+
+                <p> El relleno de nuestros dorayakis.</p>
+
+                <p> El resultado final.</p>
+
+                <h3>¡Esperamos que lo disfrutes! </h3>
+
+            </section>
+
+    <div class="frase-preparacion">
+        ✨ “Conectamos corazones, endulzamos momentos.” 💗
+    </div>
+
+</main>
+
+</body>
+</html>
+

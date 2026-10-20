@@ -1,0 +1,3301 @@
+<html>
+<style>
+/* ==============================================
+   PALETA LILA PASTEL — Suave y elegante 💜
+   ============================================== */
+:root {
+  --lila-oscuro:     #7B68EE;   /* Títulos */
+  --lila-medio:      #B39DDB;   /* Cabeceras */
+  --lila-claro:      #D8BFD8;   /* Fondos tabla */
+  --lila-muy-claro:  #F3E5F5;   /* Fondo página */
+  --lila-borde:      #CE93D8;   /* Bordes */
+  --lila-texto:      #5E35B1;   /* Texto */
+  --lila-boton:      #E1BEE7;   /* Botones */
+  --lila-hover:      #D8BFD8;   /* Hover */
+  --blanco:          #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--lila-muy-claro);
+  color: var(--lila-texto);
+  line-height: 1.7;
+}
+
+/* ==============================================
+   HEADER y NAVEGACIÓN
+   ============================================== */
+header {
+  background: linear-gradient(135deg, var(--lila-oscuro), var(--lila-medio));
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(94, 53, 177, 0.15);
+}
+
+header h1 {
+  color: var(--blanco);
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background-color: rgba(255,255,255,0.2);
+}
+
+nav a:hover,
+nav a.activo {
+  background-color: var(--blanco);
+  color: var(--lila-oscuro);
+  font-weight: bold;
+  transform: translateY(-2px);
+}
+
+/* ==============================================
+   CONTENIDO PRINCIPAL
+   ============================================== */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 25px;
+}
+
+main h2 {
+  font-size: 32px;
+  color: var(--lila-oscuro);
+  margin-bottom: 15px;
+  border-bottom: 3px solid var(--lila-borde);
+  padding-bottom: 8px;
+}
+
+main h3 {
+  font-size: 28px;
+  color: var(--lila-medio);
+  margin-bottom: 25px;
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--blanco);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(94, 53, 177, 0.1);
+  margin-bottom: 30px;
+}
+
+.bienvenida h2 {
+  font-size: 38px;
+  border: none;
+}
+
+.bienvenida p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 15px auto;
+  color: var(--lila-texto);
+}
+
+/* ==============================================
+   TABLA DE PRODUCTOS
+   ============================================== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(94, 53, 177, 0.12);
+  margin-bottom: 30px;
+}
+
+table th {
+  background: linear-gradient(135deg, var(--lila-oscuro), var(--lila-medio));
+  color: var(--blanco);
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 19px;
+}
+
+table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--lila-borde);
+  font-size: 17px;
+  background-color: var(--blanco);
+  vertical-align: middle;
+}
+
+table tr:nth-child(even) td {
+  background-color: var(--lila-claro);
+}
+
+table tr:hover td {
+  background-color: var(--lila-muy-claro);
+}
+
+table img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.puntuacion {
+  font-weight: bold;
+  color: var(--lila-oscuro);
+  font-size: 18px;
+}
+
+/* ==============================================
+   BOTONES
+   ============================================== */
+button,
+.btn {
+  background-color: var(--lila-boton);
+  border: 2px solid var(--lila-borde);
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: var(--lila-texto);
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--lila-hover);
+  border-color: var(--lila-oscuro);
+  transform: scale(1.05);
+}
+
+/* ==============================================
+   CAJA DE INFORMACIÓN (para cada página)
+   ============================================== */
+.info-caja {
+  background-color: var(--blanco);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(94, 53, 177, 0.08);
+  border-left: 5px solid var(--lila-oscuro);
+  margin-bottom: 25px;
+}
+
+.info-caja h3 {
+  color: var(--lila-oscuro);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.info-caja p,
+.info-caja ul {
+  font-size: 17px;
+  color: var(--lila-texto);
+}
+
+.info-caja ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.info-caja li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--lila-borde);
+}
+
+.info-caja li:last-child {
+  border-bottom: none;
+}
+
+/* ==============================================
+   FOOTER
+   ============================================== */
+footer {
+  background: linear-gradient(135deg, var(--lila-oscuro), var(--lila-medio));
+  color: var(--blanco);
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+/* ================================
+   QUIENES SOMOS - KOKORO SWEETS
+   ================================ */
+
+.quienes {
+    min-height: 100vh;
+    padding: 50px 7%;
+    color: #20245c;
+
+   background:
+    linear-gradient(
+        rgba(15, 25, 90, 0.25),
+        rgba(240, 165, 210, 0.25)
+    ),
+    url("yourname.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Título */
+
+.quienes h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 65px;
+    color: #292b78;
+    margin-bottom: 40px;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #ffb4dc;
+}
+
+
+/* Caja principal */
+
+.caja {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 40px 55px;
+
+    border-radius: 30px;
+
+    background: rgba(220, 215, 245, 0.78);
+
+    border: 2px solid rgba(255, 255, 255, 0.8);
+
+    box-shadow:
+        0 0 25px rgba(255, 170, 230, 0.6),
+        inset 0 0 30px rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* Títulos */
+
+.caja h2 {
+    color: #292b78;
+    font-size: 27px;
+    margin-top: 25px;
+}
+
+
+/* Texto */
+
+.caja p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #24264e;
+}
+
+
+/* Nombre de la empresa */
+
+.caja strong {
+    color: #c52d80;
+}
+
+
+/* Listas */
+
+.caja ul {
+    padding-left: 25px;
+}
+
+.caja li {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+
+/* Sabores */
+
+.sabores {
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+.sabores li {
+    color: #34366f;
+}
+
+
+/* Frase final */
+
+.frase {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.frase p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d02d83;
+}
+
+
+/* Navegación */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff9dcb;
+}
+
+nav a.activo {
+    color: #ff9dcb;
+
+    border-bottom:
+        3px solid #ff9dcb;
+
+    padding-bottom: 7px;
+}
+
+
+/* Celular */
+
+@media (max-width: 700px) {
+
+    .quienes {
+        padding: 30px 15px;
+    }
+
+    .quienes h1 {
+        font-size: 45px;
+    }
+
+    .caja {
+        padding: 25px;
+    }
+
+    .caja p {
+        font-size: 16px;
+    }
+
+    .caja h2 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+/* =================================
+   PREPARACIÓN - KOKORO SWEETS
+   ================================= */
+
+.preparacion {
+
+    min-height: 100vh;
+
+    padding: 45px 6%;
+
+    color: #25265e;
+
+    background:
+
+        linear-gradient(
+            rgba(30, 25, 100, 0.35),
+            rgba(245, 160, 210, 0.35)
+        ),
+
+        url("yourname.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+/* TITULO */
+
+.preparacion h1 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 65px;
+
+    color: #25266e;
+
+    margin: 10px 0;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #ffb5dd;
+}
+
+
+/* SUBTITULO */
+
+.subtitulo {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 30px;
+
+    color: #d13b87;
+
+    margin-top: -5px;
+}
+
+
+/* INTRODUCCIÓN */
+
+.intro {
+
+    max-width: 900px;
+
+    margin: 20px auto 35px;
+
+    text-align: center;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    color: #292957;
+
+    background: rgba(255,255,255,0.55);
+
+    padding: 15px 25px;
+
+    border-radius: 20px;
+}
+
+
+/* PASOS */
+
+.pasos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 15px;
+
+    max-width: 1400px;
+
+    margin: auto;
+}
+
+
+/* TARJETAS */
+
+.paso {
+
+    position: relative;
+
+    background:
+        rgba(235, 226, 250, 0.88);
+
+    border:
+
+        2px solid
+        rgba(255,255,255,0.8);
+
+    border-radius: 20px;
+
+    padding: 20px 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(50,30,100,0.25);
+
+    transition: 0.3s;
+}
+
+
+.paso:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(255,130,200,0.5);
+}
+
+
+/* NUMERO */
+
+.numero {
+
+    width: 48px;
+
+    height: 48px;
+
+    margin:
+        -38px auto 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ff8fc5;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    border:
+        3px solid white;
+
+    box-shadow:
+        0 0 10px #ff9bd0;
+}
+
+
+/* ICONO / IMAGEN */
+
+.imagen-paso {
+
+    font-size: 70px;
+
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 5px;
+}
+
+
+/* TITULO DE PASO */
+
+.paso h3 {
+
+    color: #28296e;
+
+    font-size: 20px;
+
+    margin: 10px 0;
+}
+
+
+/* TEXTO */
+
+.paso p {
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: #303052;
+}
+
+
+/* INGREDIENTES */
+
+.ingredientes {
+
+    max-width: 420px;
+
+    margin: 40px 0 20px;
+
+    padding: 25px;
+
+    background:
+        rgba(220, 215, 245, 0.88);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(50,30,100,0.25);
+}
+
+
+.ingredientes h2 {
+
+    color: #292b78;
+
+    margin-top: 0;
+}
+
+
+.ingredientes ul {
+
+    list-style: none;
+
+    padding: 0;
+}
+
+
+.ingredientes li {
+
+    padding: 6px;
+
+    font-size: 17px;
+}
+
+
+/* DEDICACIÓN */
+
+.dedicacion {
+
+    max-width: 600px;
+
+    margin: -170px auto 30px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background:
+        rgba(235,225,250,0.88);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(50,30,100,0.25);
+}
+
+
+.dedicacion h2 {
+
+    color: #292b78;
+}
+
+
+.dedicacion p {
+
+    line-height: 1.6;
+
+    font-size: 17px;
+}
+
+
+/* FRASE */
+
+.frase-preparacion {
+
+    text-align: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #d02d83;
+
+    margin-top: 25px;
+
+    padding: 15px;
+}
+
+
+/* NAVEGACIÓN */
+
+nav ul {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    list-style: none;
+
+    padding: 20px;
+
+    margin: 0;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+
+    color: #ff9dcc;
+}
+
+
+nav a.activo {
+
+    color: #ff9dcc;
+
+    border-bottom:
+        3px solid #ff9dcc;
+
+    padding-bottom: 7px;
+}
+
+
+/* =================================
+   CELULAR
+   ================================= */
+
+@media (max-width: 1000px) {
+
+    .pasos {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .dedicacion {
+
+        margin: 30px auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .preparacion {
+
+        padding: 30px 15px;
+
+        background-attachment: scroll;
+    }
+
+    .preparacion h1 {
+
+        font-size: 45px;
+    }
+
+    .subtitulo {
+
+        font-size: 25px;
+    }
+
+    .pasos {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .ingredientes {
+
+        margin: 30px auto;
+    }
+
+    .dedicacion {
+
+        margin: 30px auto;
+    }
+
+    nav ul {
+
+        gap: 12px;
+    }
+
+    nav a {
+
+        font-size: 14px;
+    }
+}
+/* =================================
+   PREPARACIÓN - KOKORO SWEETS
+   ================================= */
+
+.preparacion {
+
+    min-height: 100vh;
+
+    padding: 45px 6%;
+
+    color: #25265e;
+
+    background:
+
+        linear-gradient(
+            rgba(30, 25, 100, 0.35),
+            rgba(245, 160, 210, 0.35)
+        ),
+
+        url("yourname.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+/* TITULO */
+
+.preparacion h1 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 65px;
+
+    color: #25266e;
+
+    margin: 10px 0;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #ffb5dd;
+}
+
+
+/* SUBTITULO */
+
+.subtitulo {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 30px;
+
+    color: #d13b87;
+
+    margin-top: -5px;
+}
+
+
+/* INTRODUCCIÓN */
+
+.intro {
+
+    max-width: 900px;
+
+    margin: 20px auto 35px;
+
+    text-align: center;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    color: #292957;
+
+    background: rgba(255,255,255,0.55);
+
+    padding: 15px 25px;
+
+    border-radius: 20px;
+}
+
+
+/* PASOS */
+
+.pasos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 15px;
+
+    max-width: 1400px;
+
+    margin: auto;
+}
+
+
+/* TARJETAS */
+
+.paso {
+
+    position: relative;
+
+    background:
+        rgba(235, 226, 250, 0.88);
+
+    border:
+
+        2px solid
+        rgba(255,255,255,0.8);
+
+    border-radius: 20px;
+
+    padding: 20px 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(50,30,100,0.25);
+
+    transition: 0.3s;
+}
+
+
+.paso:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(255,130,200,0.5);
+}
+
+
+/* NUMERO */
+
+.numero {
+
+    width: 48px;
+
+    height: 48px;
+
+    margin:
+        -38px auto 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ff8fc5;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    border:
+        3px solid white;
+
+    box-shadow:
+        0 0 10px #ff9bd0;
+}
+
+
+/* ICONO / IMAGEN */
+
+.imagen-paso {
+
+    font-size: 70px;
+
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 5px;
+}
+
+
+/* TITULO DE PASO */
+
+.paso h3 {
+
+    color: #28296e;
+
+    font-size: 20px;
+
+    margin: 10px 0;
+}
+
+
+/* TEXTO */
+
+.paso p {
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: #303052;
+}
+
+
+/* INGREDIENTES */
+
+.ingredientes {
+
+    max-width: 420px;
+
+    margin: 40px 0 20px;
+
+    padding: 25px;
+
+    background:
+        rgba(220, 215, 245, 0.88);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(50,30,100,0.25);
+}
+
+
+.ingredientes h2 {
+
+    color: #292b78;
+
+    margin-top: 0;
+}
+
+
+.ingredientes ul {
+
+    list-style: none;
+
+    padding: 0;
+}
+
+
+.ingredientes li {
+
+    padding: 6px;
+
+    font-size: 17px;
+}
+
+
+/* DEDICACIÓN */
+
+.dedicacion {
+
+    max-width: 600px;
+
+    margin: -170px auto 30px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background:
+        rgba(235,225,250,0.88);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(50,30,100,0.25);
+}
+
+
+.dedicacion h2 {
+
+    color: #292b78;
+}
+
+
+.dedicacion p {
+
+    line-height: 1.6;
+
+    font-size: 17px;
+}
+
+
+/* FRASE */
+
+.frase-preparacion {
+
+    text-align: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #d02d83;
+
+    margin-top: 25px;
+
+    padding: 15px;
+}
+
+
+/* NAVEGACIÓN */
+
+nav ul {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    list-style: none;
+
+    padding: 20px;
+
+    margin: 0;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+
+    color: #ff9dcc;
+}
+
+
+nav a.activo {
+
+    color: #ff9dcc;
+
+    border-bottom:
+        3px solid #ff9dcc;
+
+    padding-bottom: 7px;
+}
+
+
+/* =================================
+   CELULAR
+   ================================= */
+
+@media (max-width: 1000px) {
+
+    .pasos {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .dedicacion {
+
+        margin: 30px auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .preparacion {
+
+        padding: 30px 15px;
+
+        background-attachment: scroll;
+    }
+
+    .preparacion h1 {
+
+        font-size: 45px;
+    }
+
+    .subtitulo {
+
+        font-size: 25px;
+    }
+
+    .pasos {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .ingredientes {
+
+        margin: 30px auto;
+    }
+
+    .dedicacion {
+
+        margin: 30px auto;
+    }
+
+    nav ul {
+
+        gap: 12px;
+    }
+
+    nav a {
+
+        font-size: 14px;
+    }
+}
+/* =================================
+   GALERÍA - KOKORO SWEETS
+   ================================= */
+
+.galeria {
+
+    min-height: 100vh;
+
+    padding: 40px 5%;
+
+    background:
+
+        linear-gradient(
+            rgba(35, 25, 100, 0.30),
+            rgba(245, 160, 215, 0.30)
+        ),
+
+        url("yourname.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    color: #29285e;
+}
+
+
+/* CONTENEDOR */
+
+.contenedor-galeria {
+
+    max-width: 1450px;
+
+    margin: auto;
+
+    padding: 35px 45px;
+
+    background:
+        rgba(220, 215, 245, 0.75);
+
+    border-radius: 30px;
+
+    border:
+        2px solid
+        rgba(255,255,255,0.8);
+
+    box-shadow:
+        0 0 30px
+        rgba(255,160,220,0.6);
+
+}
+
+
+/* TITULO */
+
+.galeria h1 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 65px;
+
+    color: #27276e;
+
+    margin: 0;
+    
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #ffb5dc;
+
+}
+
+
+/* SUBTITULO */
+
+.galeria h2 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 30px;
+
+    color: #d03584;
+
+    margin: 0 0 10px;
+
+}
+
+
+/* DESCRIPCIÓN */
+
+.descripcion {
+
+    text-align: center;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    margin: 5px auto;
+
+}
+
+
+/* LAS 5 IMÁGENES */
+
+.galeria-productos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 18px;
+
+    margin-top: 35px;
+
+}
+
+
+/* TARJETA */
+
+.foto-dorayaki {
+
+    background:
+        rgba(245,235,255,0.88);
+
+    border-radius: 22px;
+
+    padding: 12px;
+
+    text-align: center;
+
+    border:
+        2px solid
+        rgba(255,255,255,0.9);
+
+    box-shadow:
+        0 5px 20px
+        rgba(70,40,100,0.25);
+
+    transition: 0.3s;
+
+}
+
+
+/* EFECTO */
+
+.foto-dorayaki:hover {
+
+    transform:
+        translateY(-10px)
+        scale(1.02);
+
+    box-shadow:
+        0 10px 30px
+        rgba(255,130,200,0.55);
+
+}
+
+
+/* IMAGEN */
+
+.foto-dorayaki img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 17px;
+
+    border:
+        3px solid
+        #f3a5d0;
+
+}
+
+
+/* NOMBRE */
+
+.foto-dorayaki h3 {
+
+    color: #bd347d;
+
+    font-size: 18px;
+
+    margin: 12px 2px 5px;
+
+}
+
+
+/* DESCRIPCIÓN */
+
+.foto-dorayaki p {
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    margin: 5px;
+
+    color: #343455;
+
+}
+
+
+/* FRASE */
+
+.frase-galeria {
+
+    text-align: center;
+
+    margin-top: 35px;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #cf317f;
+
+}
+
+
+/* NAVEGACIÓN */
+
+nav ul {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    list-style: none;
+
+    padding: 20px;
+
+    margin: 0;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+nav a:hover {
+
+    color: #ff9dcc;
+
+}
+
+
+nav a.activo {
+
+    color: #ff9dcc;
+
+    border-bottom:
+        3px solid #ff9dcc;
+
+    padding-bottom: 7px;
+
+}
+
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+
+    .galeria-productos {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+
+    .galeria {
+
+        padding: 25px 12px;
+
+        background-attachment: scroll;
+
+    }
+
+    .contenedor-galeria {
+
+        padding: 25px 15px;
+
+    }
+
+    .galeria h1 {
+
+        font-size: 45px;
+
+    }
+
+    .galeria h2 {
+
+        font-size: 25px;
+
+    }
+
+    .galeria-productos {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .foto-dorayaki img {
+
+        height: 250px;
+
+    }
+
+}
+/* =================================
+   VIDEOS - KOKORO SWEETS
+   ================================= */
+
+.videos {
+
+    min-height: 100vh;
+
+    padding: 40px 5%;
+
+    color: #29285e;
+
+    background:
+
+        linear-gradient(
+            rgba(35, 25, 100, 0.30),
+            rgba(245, 160, 215, 0.30)
+        ),
+
+        url("yourname.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+/* CONTENEDOR */
+
+.contenedor-videos {
+
+    max-width: 1450px;
+
+    margin: auto;
+
+    padding: 35px 45px;
+
+    background:
+        rgba(220, 215, 245, 0.75);
+
+    border-radius: 30px;
+
+    border:
+        2px solid
+        rgba(255,255,255,0.8);
+
+    box-shadow:
+        0 0 30px
+        rgba(255,160,220,0.6);
+}
+
+
+/* TITULO */
+
+.videos h1 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 65px;
+
+    color: #27276e;
+
+    margin: 0;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #ffb5dc;
+}
+
+
+/* SUBTITULO */
+
+.videos h2 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 30px;
+
+    color: #d03584;
+
+    margin: 5px 0 15px;
+}
+
+
+/* INTRODUCCIÓN */
+
+.intro-videos {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* GRID DE VIDEOS */
+
+.videos-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 18px;
+
+    margin-top: 35px;
+}
+
+
+/* TARJETAS */
+
+.video-card {
+
+    background:
+        rgba(245,235,255,0.90);
+
+    border-radius: 22px;
+
+    padding: 12px;
+
+    text-align: center;
+
+    border:
+        2px solid
+        rgba(255,255,255,0.9);
+
+    box-shadow:
+        0 5px 20px
+        rgba(70,40,100,0.25);
+
+    transition: 0.3s;
+}
+
+
+.video-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(255,130,200,0.55);
+}
+
+
+/* VIDEO */
+
+.video {
+
+    width: 100%;
+
+    height: 200px;
+
+    overflow: hidden;
+
+    border-radius: 17px;
+
+    border:
+        3px solid #f3a5d0;
+}
+
+
+.video iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+}
+
+
+/* TITULO DEL VIDEO */
+
+.video-card h3 {
+
+    color: #bd347d;
+
+    font-size: 18px;
+
+    margin: 12px 2px 6px;
+}
+
+
+/* DESCRIPCIÓN */
+
+.video-card p {
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #343455;
+
+    margin: 5px;
+}
+
+
+/* FRASE FINAL */
+
+.frase-videos {
+
+    text-align: center;
+
+    margin-top: 35px;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #cf317f;
+}
+
+
+/* NAVEGACIÓN */
+
+nav ul {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    list-style: none;
+
+    padding: 20px;
+
+    margin: 0;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+nav a:hover {
+
+    color: #ff9dcc;
+
+}
+
+
+nav a.activo {
+
+    color: #ff9dcc;
+
+    border-bottom:
+        3px solid #ff9dcc;
+
+    padding-bottom: 7px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+
+    .videos-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+
+    .videos {
+
+        padding: 25px 12px;
+
+        background-attachment: scroll;
+    }
+
+    .contenedor-videos {
+
+        padding: 25px 15px;
+    }
+
+    .videos h1 {
+
+        font-size: 45px;
+    }
+
+    .videos h2 {
+
+        font-size: 24px;
+    }
+
+    .videos-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .video {
+
+        height: 230px;
+    }
+
+}
+/* =================================
+   CONTACTO - KOKORO SWEETS
+   ================================= */
+
+.contacto {
+
+    min-height: 100vh;
+
+    padding: 40px 5%;
+
+    background:
+
+        linear-gradient(
+            rgba(35, 25, 100, 0.30),
+            rgba(245, 160, 215, 0.30)
+        ),
+
+        url("yourname.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    color: #29285e;
+}
+
+
+/* CONTENEDOR */
+
+.contenedor-contacto {
+
+    max-width: 1450px;
+
+    margin: auto;
+
+    padding: 35px 45px;
+
+    background:
+        rgba(220, 215, 245, 0.75);
+
+    border-radius: 30px;
+
+    border: 2px solid white;
+
+    box-shadow:
+        0 0 30px
+        rgba(255,160,220,0.6);
+}
+
+
+/* TITULO */
+
+.contacto h1 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 65px;
+
+    color: #27276e;
+
+    margin: 0;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #ffb5dc;
+}
+
+
+/* SUBTITULO */
+
+.contacto h2 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 30px;
+
+    color: #d03584;
+
+    margin: 5px 0 15px;
+}
+
+
+/* INTRODUCCIÓN */
+
+.intro-contacto {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* GRID */
+
+.contactos-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-top: 35px;
+}
+
+
+/* TARJETAS */
+
+.contacto-card {
+
+    background:
+        rgba(250,235,255,0.90);
+
+    border-radius: 25px;
+
+    padding: 25px 18px;
+
+    text-align: center;
+
+    border: 2px solid white;
+
+    box-shadow:
+        0 5px 20px
+        rgba(70,40,100,0.25);
+
+    transition: 0.3s;
+}
+
+
+.contacto-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(255,130,200,0.55);
+}
+
+
+/* ICONOS */
+
+.icono-contacto {
+
+    font-size: 55px;
+
+    margin-bottom: 5px;
+}
+
+
+/* TITULO TARJETA */
+
+.contacto-card h3 {
+
+    font-size: 24px;
+
+    color: #bd347d;
+
+    margin: 10px 0;
+}
+
+
+/* TEXTO */
+
+.contacto-card p {
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    color: #343455;
+}
+
+
+/* BOTONES */
+
+.boton-contacto {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 11px 18px;
+
+    border-radius: 25px;
+
+    background: #d73587;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.boton-contacto:hover {
+
+    background: #a92468;
+
+    transform: scale(1.05);
+}
+
+
+/* QR YAPE */
+
+.qr-yape {
+
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: contain;
+
+    margin: 10px auto;
+
+    display: block;
+
+    background: white;
+
+    padding: 8px;
+
+    border-radius: 15px;
+
+    border: 3px solid #8d4ab8;
+
+    box-shadow:
+        0 0 15px
+        rgba(140,70,180,0.4);
+}
+
+
+/* TEXTO DEL QR */
+
+.texto-qr {
+
+    font-weight: bold;
+
+    color: #733b91 !important;
+}
+
+
+/* FRASE */
+
+.frase-contacto {
+
+    text-align: center;
+
+    margin-top: 35px;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #cf317f;
+}
+
+
+/* NAVEGACIÓN */
+
+nav ul {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    list-style: none;
+
+    padding: 20px;
+
+    margin: 0;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+nav a:hover {
+
+    color: #ff9dcc;
+}
+
+
+nav a.activo {
+
+    color: #ff9dcc;
+
+    border-bottom:
+        3px solid #ff9dcc;
+
+    padding-bottom: 7px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+
+    .contactos-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .contacto {
+
+        padding: 25px 12px;
+
+        background-attachment: scroll;
+    }
+
+    .contenedor-contacto {
+
+        padding: 25px 15px;
+    }
+
+    .contacto h1 {
+
+        font-size: 45px;
+    }
+
+    .contacto h2 {
+
+        font-size: 24px;
+    }
+
+    .contactos-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ==========================================
+   UBICACIÓN - KOKORO SWEETS
+   ========================================== */
+
+.ubicacion {
+
+    min-height: 100vh;
+
+    padding: 40px 5%;
+
+    color: #29285e;
+
+    background:
+
+        linear-gradient(
+            rgba(35, 25, 100, 0.30),
+            rgba(245, 160, 215, 0.30)
+        ),
+
+        url("yourname.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor-ubicacion {
+
+    max-width: 1450px;
+
+    margin: auto;
+
+    padding: 35px 45px;
+
+    background:
+        rgba(220, 215, 245, 0.75);
+
+    border-radius: 30px;
+
+    border: 2px solid
+        rgba(255,255,255,0.85);
+
+    box-shadow:
+        0 0 30px
+        rgba(255,160,220,0.65);
+}
+
+
+/* TITULO */
+
+.ubicacion h1 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 65px;
+
+    color: #27276e;
+
+    margin: 0;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #ffb5dc;
+}
+
+
+/* SUBTITULO */
+
+.ubicacion h2 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 32px;
+
+    color: #d03584;
+
+    margin: 5px 0 10px;
+}
+
+
+/* INTRO */
+
+.intro-ubicacion {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #292957;
+}
+
+
+/* GRID PRINCIPAL */
+
+.ubicacion-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.5fr 1fr;
+
+    gap: 20px;
+
+    margin-top: 35px;
+
+    align-items: stretch;
+}
+
+
+/* TARJETAS */
+
+.direccion,
+.mapa,
+.foto-local {
+
+    background:
+        rgba(250,235,255,0.90);
+
+    border-radius: 25px;
+
+    border: 2px solid white;
+
+    box-shadow:
+        0 5px 20px
+        rgba(70,40,100,0.25);
+
+    overflow: hidden;
+}
+
+
+/* DIRECCIÓN */
+
+.direccion {
+
+    padding: 25px;
+
+    background:
+        rgba(250,235,255,0.88);
+}
+
+
+.direccion h3 {
+
+    font-family: cursive;
+
+    font-size: 24px;
+
+    color: #292b78;
+
+    margin: 5px 0 12px;
+}
+
+
+.direccion p {
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin: 7px 0;
+
+    color: #343455;
+}
+
+
+/* SEPARADORES */
+
+.separador {
+
+    height: 2px;
+
+    margin: 20px 0;
+
+    background:
+        #ef9ac9;
+}
+
+
+/* MAPA */
+
+.mapa {
+
+    padding: 18px;
+
+    text-align: center;
+}
+
+
+.mapa h3 {
+
+    font-family: cursive;
+
+    font-size: 24px;
+
+    color: #292b78;
+
+    margin: 5px 0 15px;
+}
+
+
+.mapa iframe {
+
+    width: 100%;
+
+    height: 330px;
+
+    border: 0;
+
+    border-radius: 18px;
+}
+
+
+/* BOTÓN MAPA */
+
+.boton-mapa {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    background:
+        #d73587;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.boton-mapa:hover {
+
+    background:
+        #a92468;
+
+    transform:
+        scale(1.05);
+}
+
+
+/* FOTO DEL LOCAL */
+
+.foto-local {
+
+    position: relative;
+
+    min-height: 400px;
+}
+
+
+.foto-local img {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 400px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* MENSAJE SOBRE LA FOTO */
+
+.mensaje-local {
+
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 20px;
+
+    right: 20px;
+
+    padding: 13px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,220,240,0.92);
+
+    color: #d02d83;
+
+    font-family: cursive;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 0 15px
+        rgba(255,150,210,0.6);
+}
+
+
+/* FRASE FINAL */
+
+.frase-ubicacion {
+
+    text-align: center;
+
+    margin-top: 35px;
+
+    font-size: 26px;
+
+    font-family: cursive;
+
+    font-weight: bold;
+
+    color: #cf317f;
+}
+
+
+/* NAVEGACIÓN */
+
+nav ul {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    list-style: none;
+
+    padding: 20px;
+
+    margin: 0;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+
+    color: #ff9dcc;
+}
+
+
+nav a.activo {
+
+    color: #ff9dcc;
+
+    border-bottom:
+        3px solid #ff9dcc;
+
+    padding-bottom: 7px;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1100px) {
+
+    .ubicacion-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .foto-local {
+
+        grid-column:
+            1 / 3;
+
+        max-height: 450px;
+    }
+
+}
+
+
+/* ==========================================
+   CELULAR
+   ========================================== */
+
+@media (max-width: 650px) {
+
+    .ubicacion {
+
+        padding: 25px 12px;
+
+        background-attachment:
+            scroll;
+    }
+
+    .contenedor-ubicacion {
+
+        padding: 25px 15px;
+    }
+
+    .ubicacion h1 {
+
+        font-size: 45px;
+    }
+
+    .ubicacion h2 {
+
+        font-size: 25px;
+    }
+
+    .ubicacion-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .foto-local {
+
+        grid-column:
+            auto;
+    }
+
+    .mapa iframe {
+
+        height: 280px;
+    }
+
+}
+/* =================================
+   COSTOS - KOKORO SWEETS
+   ================================= */
+
+.costos {
+
+    min-height: 100vh;
+
+    padding: 40px 5%;
+
+    background:
+
+        linear-gradient(
+            rgba(35, 25, 100, 0.30),
+            rgba(245, 160, 215, 0.30)
+        ),
+
+        url("yourname.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    color: #29285e;
+}
+
+
+/* CONTENEDOR */
+
+.contenedor-costos {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 35px 45px;
+
+    background:
+        rgba(220, 215, 245, 0.78);
+
+    border-radius: 30px;
+
+    border: 2px solid white;
+
+    box-shadow:
+        0 0 30px
+        rgba(255,160,220,0.6);
+}
+
+
+/* TITULO */
+
+.costos h1 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 65px;
+
+    color: #292b78;
+
+    margin: 0;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #ffb5dc;
+}
+
+
+/* SUBTITULO */
+
+.costos h2 {
+
+    text-align: center;
+
+    font-family: cursive;
+
+    font-size: 30px;
+
+    color: #d03584;
+
+    margin: 5px 0 15px;
+}
+
+
+/* INTRO */
+
+.intro-costos {
+
+    text-align: center;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* =================================
+   PRODUCTOS
+   ================================= */
+
+.productos-costos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 20px;
+
+    margin-top: 35px;
+}
+
+
+/*
+   1, 2 y 3 ARRIBA
+*/
+
+.producto-costo:nth-child(1),
+.producto-costo:nth-child(2),
+.producto-costo:nth-child(3) {
+
+    grid-column: span 2;
+}
+
+
+/*
+   4 y 5 ABAJO
+*/
+
+.producto-costo:nth-child(4) {
+
+    grid-column: 2 / span 2;
+}
+
+.producto-costo:nth-child(5) {
+
+    grid-column: 4 / span 2;
+}
+
+
+/* TARJETAS */
+
+.producto-costo {
+
+    padding: 15px;
+
+    text-align: center;
+
+    background:
+        rgba(250,235,255,0.92);
+
+    border-radius: 25px;
+
+    border: 2px solid white;
+
+    box-shadow:
+        0 5px 20px
+        rgba(70,40,100,0.25);
+
+    transition: 0.3s;
+}
+
+
+.producto-costo:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(255,130,200,0.55);
+}
+
+
+/* IMÁGENES */
+
+.producto-costo img {
+
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    border: 2px solid #f3a5d0;
+}
+
+
+/* NOMBRE */
+
+.producto-costo h3 {
+
+    font-family: cursive;
+
+    font-size: 23px;
+
+    color: #bd347d;
+
+    margin: 12px 0 5px;
+}
+
+
+/* DESCRIPCIÓN */
+
+.producto-costo p {
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin: 8px;
+}
+
+
+/* PRECIO */
+
+.precio {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 10px 35px;
+
+    border-radius: 25px;
+
+    background: #d92f83;
+
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 4px 10px
+        rgba(190,40,120,0.3);
+}
+
+
+/* MENSAJE */
+
+.mensaje-costos {
+
+    max-width: 600px;
+
+    margin: 35px auto 15px;
+
+    padding: 15px 25px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,220,240,0.85);
+
+    color: #34366f;
+
+    font-size: 17px;
+}
+
+
+/* FRASE */
+
+.frase-costos {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-family: cursive;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    color: #cf317f;
+}
+
+
+/* =================================
+   NAVEGACIÓN
+   ================================= */
+
+nav ul {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    list-style: none;
+
+    padding: 20px;
+
+    margin: 0;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+nav a:hover {
+
+    color: #ff9dcc;
+}
+
+
+nav a.activo {
+
+    color: #ff9dcc;
+
+    border-bottom:
+        3px solid #ff9dcc;
+
+    padding-bottom: 7px;
+}
+
+
+/* =================================
+   TABLET
+   ================================= */
+
+@media (max-width: 1000px) {
+
+    .productos-costos {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .producto-costo:nth-child(1),
+    .producto-costo:nth-child(2),
+    .producto-costo:nth-child(3),
+    .producto-costo:nth-child(4),
+    .producto-costo:nth-child(5) {
+
+        grid-column: auto;
+    }
+
+}
+
+
+/* =================================
+   CELULAR
+   ================================= */
+
+@media (max-width: 600px) {
+
+    .costos {
+
+        padding: 25px 12px;
+
+        background-attachment: scroll;
+    }
+
+    .contenedor-costos {
+
+        padding: 25px 15px;
+    }
+
+    .costos h1 {
+
+        font-size: 45px;
+    }
+
+    .costos h2 {
+
+        font-size: 24px;
+    }
+
+    .productos-costos {
+
+        grid-template-columns: 1fr;
+    }
+
+    .producto-costo:nth-child(1),
+    .producto-costo:nth-child(2),
+    .producto-costo:nth-child(3),
+    .producto-costo:nth-child(4),
+    .producto-costo:nth-child(5) {
+
+        grid-column: auto;
+    }
+
+}
+/* =================================
+   TÍTULOS CON BRILLO Y DESTELLOS ✨
+   ================================= */
+
+.costos h1,
+.quienes h1,
+.preparacion h1,
+.productos h1,
+.galeria h1,
+.videos h1,
+.contacto h1,
+.ubicacion h1 {
+
+    position: relative;
+
+    animation:
+        moverTitulo 4s ease-in-out infinite,
+        brilloTitulo 2s ease-in-out infinite alternate;
+
+}
+
+
+/* MOVIMIENTO IZQUIERDA - DERECHA */
+
+@keyframes moverTitulo {
+
+    0% {
+        transform: translateX(-25px);
+    }
+
+    50% {
+        transform: translateX(25px);
+    }
+
+    100% {
+        transform: translateX(-25px);
+    }
+
+}
+
+
+/* BRILLO */
+
+@keyframes brilloTitulo {
+
+    0% {
+
+        text-shadow:
+            0 0 5px white,
+            0 0 10px #ffb5dc,
+            0 0 15px #ff8fc5;
+
+    }
+
+    50% {
+
+        text-shadow:
+            0 0 10px white,
+            0 0 20px #ffb5dc,
+            0 0 35px #ff69b4;
+
+    }
+
+    100% {
+
+        text-shadow:
+            0 0 5px white,
+            0 0 15px #ffc7e5,
+            0 0 25px #ff8fc5;
+
+    }
+
+}
+
+
+
+</style>
